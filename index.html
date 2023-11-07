@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online voting system - Home</title>
+   <link rel="stylesheet" href="css/stylesheet.css">
+   <style>
+    fieldset{
+                background-color:lightblue;
+                border: 1px solid #000;
+                float:center;
+    }
+   </style>
+    </head>
+    <body>
+        
+            <center>
+            <div id="headerSection">
+            <h1><b>WELCOME TO ONLINE VOTING WEBSITE</b></h1>  
+            </div>
+            <hr>
+
+            <div id="loginSection">
+                <fieldset>
+                <h2>Login</h2>
+                <form action="api/login.php" method="POST">
+                    <input type="text" name="name" placeholder="Enter name" required><br><br>
+                    <input type="password" name="pass" placeholder="Enter password" required><br><br>
+                    <select name="role" style="width: 15%; border: 2px solid black">
+                        <option value="1">Voter</option>
+                        <option value="2">Group</option>
+                    </select><br><br>                  
+                    <button id="loginbtn" type="submit" name="loginbtn">Login</button><br><br>
+                    Sign Up? <a href="routes/register.php">Click here to Register</a>
+                </form>
+            </fieldset>
+            </div>
+
+            </center> 
+    </body>
+</html>
